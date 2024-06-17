@@ -79,7 +79,7 @@ for (xA, yA, xB, yB) in pick:
     cv2.rectangle(img, (xA, yA), (xB, yB), (0,255,0), 2)
 cv2.imshow("Raw Detections after NMS", img)
 #### Save the images below
- = cv2.waitKey(0) & 0xFF 
+k = cv2.waitKey(0) & 0xFF 
 if k == 27:             #wait for ESC key to exit
     cv2.destroyAllWindows()
 elif k == ord('s'):
